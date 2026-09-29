@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aravind Annamalai — Cybersecurity GRC & Compliance Specialist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070c;--b9:#0c0b16;--b8:#121024;--p:#8b5cf6;--pl:#a78bfa;--pe:#c084fc;--cy:#38bdf8;--em:#34d399;--tx:#f3f4f6;--mu:#94a3b8;--ln:rgba(167,139,250,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--tx);font:400 14px/1.65 'Plus Jakarta Sans',sans-serif;overflow-x:hidden;padding-bottom:env(safe-area-inset-bottom)}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(rgba(167,139,250,.11) 1px,transparent 1px) 0 0/28px 28px;pointer-events:none;z-index:0}
+body:after{content:"";position:fixed;top:-220px;left:50%;width:760px;height:460px;transform:translateX(-50%);background:radial-gradient(circle,rgba(139,92,246,.24),transparent 70%);filter:blur(100px);pointer-events:none;z-index:0}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--pe);outline-offset:3px;border-radius:6px}
+.w{max-width:1180px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+.mono{font-family:'JetBrains Mono',monospace}
+.mu{color:var(--mu)}.pl{color:var(--pl)}.pe{color:var(--pe)}.em{color:var(--em)}.cy{color:var(--cy)}
+.hidden{display:none!important}
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(7,7,12,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07);padding-top:env(safe-area-inset-top)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,#6d28d9,var(--p),var(--pl));padding:1px}
+.logo span{display:grid;place-items:center;height:100%;background:var(--bg);border-radius:10px;font-weight:800;font-size:12px;letter-spacing:.06em}
+.brand b{display:block;font-size:14px;line-height:1.2}.brand small{color:var(--pl);font-size:11px}
+nav{display:flex;gap:24px;font-size:12.5px;font-weight:500;color:#cbd5e1}
+nav button:hover,nav .on{color:var(--pe)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;font-weight:600;font-size:12.5px;transition:.25s}
+.b1{background:linear-gradient(90deg,#7c3aed,var(--p),#a78bfa);box-shadow:0 8px 24px -8px rgba(124,58,237,.7)}
+.b1:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.b2{border:1px solid rgba(167,139,250,.3);background:rgba(139,92,246,.1);color:#ddd6fe}
+.b2:hover{background:rgba(139,92,246,.22)}
+/* cards */
+.c{position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(18,16,36,.78),rgba(12,11,22,.92));border:1px solid var(--ln);border-radius:20px;padding:24px;transition:border-color .3s,transform .3s}
+.c:before{content:"";position:absolute;inset:0;background:radial-gradient(360px circle at var(--x,50%) var(--y,0),rgba(139,92,246,.16),transparent 45%);opacity:0;transition:.3s;pointer-events:none}
+.c:hover{border-color:rgba(192,132,252,.4)}.c:hover:before{opacity:1}
+.g{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.tag{display:inline-block;padding:3px 10px;border-radius:7px;font-size:11px;border:1px solid rgba(167,139,250,.22);background:rgba(139,92,246,.1);color:#c4b5fd}
+.tag.e{background:rgba(52,211,153,.08);border-color:rgba(52,211,153,.25);color:var(--em)}
+.tag.y{background:rgba(56,189,248,.08);border-color:rgba(56,189,248,.25);color:var(--cy)}
+h1,h2,h3{letter-spacing:-.02em;line-height:1.2}
+section{padding-top:88px}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:24px;border-bottom:1px solid rgba(255,255,255,.08)}
+.sh small{color:var(--pe);font-size:12px;font-weight:600}
+.sh h2{font-size:28px;font-weight:700;margin-top:2px}
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;padding-top:40px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border-radius:99px;background:rgba(76,29,149,.3);border:1px solid rgba(139,92,246,.32);color:#c4b5fd;font-size:12px;margin-bottom:18px}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--em);box-shadow:0 0 10px var(--em)}
+.hero h1{font-size:clamp(36px,5.4vw,60px);font-weight:800;line-height:1.05}
+.hero h1 span{display:block;background:linear-gradient(90deg,var(--pl),var(--pe));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:.46em;font-weight:600;margin-top:12px;letter-spacing:-.01em}
+.hero p{color:#cbd5e1;max-width:56ch;margin-top:20px}
+.hero p.s{color:var(--mu);font-size:13px;margin-top:12px}
+.q{margin-top:24px;padding:16px 18px;border-left:2px solid var(--p);background:rgba(76,29,149,.16);border-radius:0 12px 12px 0;color:#ddd6fe;font-style:italic;font-size:13px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.big{display:flex;flex-direction:column;justify-content:space-between;min-height:430px;background:linear-gradient(160deg,rgba(76,29,149,.42),var(--b9) 62%)}
+.big .n{font-size:clamp(150px,20vw,250px);font-weight:800;line-height:.82;letter-spacing:-.06em;background:linear-gradient(180deg,#fff 5%,var(--pe) 45%,var(--p) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.big .r{position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;border:1px solid rgba(192,132,252,.25);box-shadow:inset 0 0 0 40px rgba(139,92,246,.05),inset 0 0 0 41px rgba(192,132,252,.15)}
+.big h3{font-size:19px;font-weight:700;margin-top:14px}
+.big .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.big .row div{padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);font-size:11.5px;color:var(--mu)}
+.big .row b{display:block;color:#fff;font-size:15px}
+.strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.strip span{padding:8px 16px;border-radius:99px;border:1px solid var(--ln);background:rgba(18,16,36,.6);font-size:12px;font-weight:500;color:#ddd6fe}
+.c h3{font-size:16.5px;font-weight:700;margin:8px 0 6px}
+.c p{font-size:12.5px;color:var(--mu)}
+.c ul{list-style:none;font-size:12.5px;color:#cbd5e1;display:grid;gap:8px;margin-top:12px}
+.c li{padding-left:18px;position:relative}
+.c li:before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:2px;background:var(--p)}
+.top{display:flex;justify-content:space-between;font-size:11.5px;color:var(--mu)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:16px}
+.pipe div{padding:12px 6px;text-align:center;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06)}
+.pipe div:nth-child(3){background:rgba(139,92,246,.12);border-color:rgba(139,92,246,.35)}
+.pipe div:nth-child(5){background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.32)}
+.pipe small{display:block;color:var(--pl);font-size:10px}.pipe b{font-size:12.5px}
+/* filters */
+.f{display:flex;gap:8px;flex-wrap:wrap}
+.f button{padding:8px 15px;border-radius:10px;background:rgba(255,255,255,.05);color:#cbd5e1;font-size:12px;font-weight:600;transition:.2s}
+.f button:hover{background:rgba(255,255,255,.1)}
+.f button.on{background:var(--p);color:#fff;box-shadow:0 6px 18px -6px rgba(139,92,246,.8)}
+/* cases */
+.case{display:flex;flex-direction:column;justify-content:space-between}
+.case .d{display:grid;gap:10px;font-size:12.5px;color:#cbd5e1;margin-top:14px}
+.case .d b{color:#fff}
+.dl{margin-top:14px;padding:14px;border-radius:14px;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.06)}
+.dl>b{font-size:12px;color:var(--pl)}
+.res{margin-top:20px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:var(--em);font-weight:600}
+/* timeline */
+.tl{position:relative;padding-left:34px}
+.tl:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--pe),var(--p) 60%,rgba(139,92,246,.1))}
+.tl .c{margin-bottom:16px}
+.tl .c:after{content:"";position:absolute;left:-34px;top:30px;width:0}
+.dot{position:absolute;left:-34px;top:28px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:2px solid var(--pe);box-shadow:0 0 14px rgba(192,132,252,.6)}
+.tl .c{overflow:visible}
+.tl .row2{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.total{margin-top:6px;padding:18px 22px;border-radius:16px;border:1px dashed rgba(192,132,252,.4);background:rgba(76,29,149,.15);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.total b{font-size:22px}
+/* forms */
+label{display:block;font-size:12px;font-weight:500;margin-bottom:5px;color:#cbd5e1}
+input,select,textarea{width:100%;background:var(--bg);border:1px solid rgba(139,92,246,.25);border-radius:12px;padding:11px 14px;color:#fff;font:inherit;font-size:13px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--pe)}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+footer{margin-top:88px;border-top:1px solid rgba(255,255,255,.08);padding:28px 0;font-size:12px;color:var(--mu)}
+footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer button:hover,footer a:hover{color:var(--pe)}
+/* modals */
+.m{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.86);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:16px}
+.m .c{max-width:720px;width:100%;max-height:88vh;overflow-y:auto;background:var(--b9);padding:32px}
+.m h4{font:600 12px 'JetBrains Mono',monospace;color:#fff;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:5px;margin:20px 0 8px}
+.m p,.m li{font-size:12.5px;color:#cbd5e1}.m ul{padding-left:18px}
+@media(max-width:860px){nav{display:none}.hero,.g2,.g3,.g4,.fr{grid-template-columns:1fr}.pipe{grid-template-columns:repeat(2,1fr)}.big{min-height:340px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+@media print{body *{visibility:hidden}#resume,#resume *{visibility:visible}#resume{position:absolute;inset:0;background:#fff;color:#0f172a}#resume *{color:#0f172a!important}}
+</style>
+</head>
+<body>
+
+<header><div class="w">
+  <a href="#" onclick="go('main');return false" class="brand"><div class="logo"><span>AA</span></div><div><b>Aravind Annamalai</b><small>Cybersecurity GRC & Compliance</small></div></a>
+  <nav>
+    <button id="n-main" class="on" onclick="go('main')">Portfolio</button>
+    <button id="n-consulting" onclick="go('consulting')">Consulting & advisory</button>
+    <button onclick="go('main','skills')">Skills</button>
+    <button onclick="go('main','cases')">Case studies</button>
+    <button onclick="go('main','journey')">Journey</button>
+  </nav>
+  <div style="display:flex;gap:10px"><button class="btn b2" onclick="openM('resume')">Resume</button><button class="btn b1" onclick="go('consulting')">Consultant query</button></div>
+</div></header>
+
+<main id="p-main" class="w">
+  <div class="hero">
+    <div class="c" style="padding:36px">
+      <div class="pill"><i></i>Open to GRC advisory and audit readiness work</div>
+      <h1>Aravind Annamalai<span>Cybersecurity GRC & Compliance Specialist</span></h1>
+      <p>I turn regulatory and security requirements into audit-ready compliance programs. Four years in cybersecurity, working across ISO 27001, ISO 27701, ISO 42001 and SOC 2 Type 2 readiness.</p>
+      <p class="s">Hands-on with IT & IS risk assessments, third-party risk management (TPRM) and audit defense across SaaS, manufacturing and AI platforms. Based in Chennai, India. ISO/IEC 27001:2022 Lead Auditor.</p>
+      <div class="q">"Compliance should never exist only for the audit. The purpose is to build controls organizations can actually operate, measure, and scale."</div>
+      <div class="cta"><button class="btn b1" onclick="go('main','cases')">View case studies</button><button class="btn b2" onclick="openM('resume')">Read resume</button></div>
+    </div>
+    <div class="c big">
+      <div class="r"></div>
+      <div><div class="n">4</div><h3>Years in cybersecurity</h3><p style="margin-top:6px">Compliance delivery and client advisory, from scoping to audit sign-off.</p></div>
+      <div class="row"><div><b>4 frameworks</b>27001 · 27701 · 42001 · SOC 2</div><div><b>3 sectors</b>SaaS · Manufacturing · AI</div></div>
+    </div>
+  </div>
+
+  <div class="strip"><span>ISO 27001:2022</span><span>ISO 27701</span><span>ISO 42001</span><span>SOC 2 Type 2</span><span>TPRM</span><span>DPDPA 2023</span><span>GDPR</span></div>
+
+  <div class="g g2" style="margin-top:16px">
+    <div class="c"><div class="top"><span class="pe">Why choose me</span></div><h3>Auditor's eye, engineer's empathy</h3>
+      <p>Most compliance efforts fail because policies are written in a vacuum. As a Lead Auditor who understands cloud architecture, I make controls match your actual tech stack without slowing development.</p>
+      <ul><li>Custom-fitted policies, no boilerplate</li><li>Direct mapping to AWS, Azure and GitHub CI/CD</li></ul>
+      <button class="btn b2" style="margin-top:18px" onclick="go('consulting')">Explore advisory</button></div>
+    <div class="c"><div class="top"><span class="cy">The differentiator</span></div><h3>Controls built to run, not just to pass</h3>
+      <p>Instead of a pre-audit scramble every 12 months, I set up continuous evidence trails, clear owner assignments and repeatable risk scoring your team can maintain.</p>
+      <div class="g g2" style="margin-top:16px;gap:10px"><div class="dl" style="margin:0"><b>Unified scope</b><p>ISO 27001 and SOC 2 together</p></div><div class="dl" style="margin:0"><b class="em">Defensible evidence</b><p>Target: zero qualification findings</p></div></div></div>
+  </div>
+
+  <div class="g g2" style="margin-top:16px">
+    <div class="c"><h3 style="margin-top:0">Certifications</h3>
+      <div class="g g2" style="gap:10px;margin-top:14px">
+        <div class="dl" style="margin:0"><b style="color:#fff">ISO/IEC 27001:2022 Lead Auditor</b><p>CQI / IRCA accredited</p></div>
+        <div class="dl" style="margin:0"><b style="color:#fff">Certified in Cybersecurity (CC)</b><p>ISC2</p></div>
+        <div class="dl" style="margin:0"><b style="color:#fff">Google Cybersecurity Certificate</b><p>Google Professional Series</p></div>
+        <div class="dl" style="margin:0"><b style="color:#fff">ISO 42001 (AIMS) & DPDPA</b><p>AI governance and privacy practice</p></div>
+      </div></div>
+    <div class="c"><h3 style="margin-top:0">How an engagement runs</h3><p>From scope to audit readiness, in five steps.</p>
+      <div class="pipe"><div><small>01</small><b>Scope</b></div><div><small>02</small><b>Risk</b></div><div><small>03</small><b>Controls</b></div><div><small>04</small><b>Evidence</b></div><div><small>05</small><b>Audit</b></div></div></div>
+  </div>
+
+  <section id="skills">
+    <div class="sh"><div><small>Capabilities</small><h2>GRC & audit competencies</h2></div>
+      <div class="f"><button class="on" data-t="all">All</button><button data-t="std">ISO & SOC 2</button><button data-t="risk">Risk & TPRM</button></div></div>
+    <div class="g g3" id="sk">
+      <div class="c" data-t="std"><div class="top"><span class="pe">ISMS governance</span><span>Lead Auditor</span></div><h3>ISO/IEC 27001:2022</h3><p>Implementation across Clauses 4–10, Statement of Applicability for the 93 Annex A controls, and Stage 1 / Stage 2 audit support.</p><div class="tags"><span class="tag">SoA 2022</span><span class="tag">Risk treatment</span></div></div>
+      <div class="c" data-t="std"><div class="top"><span class="pe">AICPA standards</span><span>Cloud native</span></div><h3>SOC 2 Type 2 readiness</h3><p>Trust Services Criteria mapping to AWS/Azure environments, CI/CD pipelines and evidence observation periods.</p><div class="tags"><span class="tag">Common Criteria</span><span class="tag">Observation window</span></div></div>
+      <div class="c" data-t="std"><div class="top"><span class="cy">AI governance</span><span>Emerging</span></div><h3>ISO/IEC 42001 (AIMS)</h3><p>AI management system design, training data provenance, algorithmic transparency and model lifecycle oversight.</p><div class="tags"><span class="tag y">AI risk register</span><span class="tag y">Responsible AI</span></div></div>
+      <div class="c" data-t="risk"><div class="top"><span class="em">Enterprise risk</span><span>IT & IS</span></div><h3>IT & IS risk assessment</h3><p>5x5 likelihood x impact scoring, asset valuation, threat profiling and residual risk derivation for leadership.</p><div class="tags"><span class="tag e">Residual risk</span><span class="tag e">Risk acceptance</span></div></div>
+      <div class="c" data-t="risk"><div class="top"><span class="em">Supply chain</span><span>Vendor oversight</span></div><h3>Third-party risk (TPRM)</h3><p>Security questionnaires (CAIQ/SIG), supplier categorization, tier-1 vendor assessments and contractual compliance clauses.</p><div class="tags"><span class="tag e">Due diligence</span><span class="tag e">Vendor tiering</span></div></div>
+    </div>
+  </section>
+
+  <section id="cases">
+    <div class="sh"><div><small>Advisory engagements</small><h2>Case studies & consulting projects</h2></div><p class="mu" style="max-width:44ch;font-size:12.5px">Anonymized client work across cloud SaaS, manufacturing and AI platforms.</p></div>
+    <div class="g g3">
+      <div class="c case"><div><div class="top"><span class="tag">Multi-tenant cloud SaaS</span><span>ISO 27001 & SOC 2</span></div><h3 style="font-size:19px;margin-top:16px">Dual certification readiness</h3>
+        <div class="d"><p><b>Challenge:</b> A SaaS vendor needed ISO 27001:2022 and SOC 2 Type 2 readiness to clear enterprise security reviews without delaying delivery.</p><p><b>Approach:</b> Harmonized Trust Services Criteria with the 93 Annex A controls to remove duplicate effort. Tied evidence collection to AWS IAM, GitHub approvals and Okta MFA.</p></div>
+        <div class="dl"><b>Key deliverables</b><ul><li>20+ information security and access policies</li><li>Unified SoA and risk treatment plan</li><li>Stage 1 and 2 auditor evidence workpaper</li></ul></div></div>
+        <div class="res">✓ Cleared Stage 2 external audit cleanly</div></div>
+
+      <div class="c case"><div><div class="top"><span class="tag e">Industrial manufacturing</span><span>IT & IS risk assessment</span></div><h3 style="font-size:19px;margin-top:16px">Enterprise IT/IS risk assessment</h3>
+        <div class="d"><p><b>Challenge:</b> A manufacturing client had unquantified cyber exposure across its corporate IT environment and third-party suppliers.</p><p><b>Approach:</b> Ran a structured IT & IS risk assessment on a 5x5 likelihood x impact model and set up vendor security due diligence for key suppliers.</p></div>
+        <div class="dl"><b>Key deliverables</b><ul><li>Risk assessment mapped to business impact thresholds</li><li>Third-party vendor risk assessment (TPRM) procedure</li><li>Quarterly risk treatment and committee reporting</li></ul></div></div>
+        <div class="res">✓ Mitigated unmapped high-exposure vectors</div></div>
+
+      <div class="c case"><div><div class="top"><span class="tag y">Technology / AI platform</span><span>ISO/IEC 42001</span></div><h3 style="font-size:19px;margin-top:16px">Responsible AI & model lifecycle governance</h3>
+        <div class="d"><p><b>Challenge:</b> An AI platform with predictive and generative models needed governance for data provenance, hallucinations and ethical compliance.</p><p><b>Approach:</b> Built an AI management system aligned to ISO 42001, with controls for training data lineage, prompt injection testing and human-in-the-loop oversight.</p></div>
+        <div class="dl"><b>Key deliverables</b><ul><li>AI risk assessment (data poisoning, inversion, bias)</li><li>Training data lineage and responsible AI policy</li><li>Model validation and monitoring framework</li></ul></div></div>
+        <div class="res">✓ AIMS governance framework established</div></div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <div class="sh"><div><small>Career history</small><h2>Professional journey</h2></div></div>
+    <div class="tl">
+      <div class="c"><span class="dot"></span><div class="row2"><div><h3 style="font-size:19px;margin-top:0">WhizzC <span class="tag" style="margin-left:8px;vertical-align:middle">GRC practice</span></h3><p class="pl" style="font-weight:600;margin:4px 0 8px">GRC Consultant → GRC Specialist → Senior Compliance Analyst</p><p style="max-width:62ch">Led ISO 27001:2022 and SOC 2 Type 2 programs, Statement of Applicability documentation and IT/IS risk assessments across enterprise clients. Supported certification audits with accredited registrars.</p></div><div style="text-align:right"><b class="mono" style="font-size:18px">1.5 years</b><p class="em">Audits & advisory</p></div></div></div>
+      <div class="c"><span class="dot" style="border-color:var(--p);box-shadow:none"></span><div class="row2"><div><h3 style="font-size:19px;margin-top:0">Vault Infosec <span class="tag" style="margin-left:8px;vertical-align:middle;color:#cbd5e1;background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12)">Cybersecurity sales & advisory</span></h3><p style="font-weight:600;margin:4px 0 8px;color:#e2e8f0">Sales Intern → Sales Associate → Senior Sales Associate</p><p style="max-width:62ch">Scoped vulnerability assessment and penetration testing (VAPT) and compliance engagements. Ran technical requirement discussions between security teams and executive stakeholders.</p></div><div style="text-align:right"><b class="mono" style="font-size:18px">2.5 years</b><p>Scoping & advisory</p></div></div></div>
+      <div class="total"><div><b class="pe">4 years</b><span class="mu" style="margin-left:10px">total cybersecurity experience</span></div><span class="tag e">Advisory → GRC delivery</span></div>
+    </div>
+  </section>
+</main>
+
+<div id="p-consulting" class="w hidden" style="padding-top:48px">
+  <div style="max-width:720px"><div class="pill"><i></i>Independent GRC advisory & audit readiness</div>
+    <h1 style="font-size:clamp(30px,4.6vw,48px);font-weight:800">What you get when you work with me</h1>
+    <p class="mu" style="margin-top:14px">Advising SaaS providers, AI platforms and manufacturers on turning compliance mandates into controls their teams can run.</p></div>
+  <div class="g g3" style="margin-top:32px">
+    <div class="c"><h3>Why choose me</h3><p>Most agencies assign junior analysts working from templates. With me:</p><ul><li><b style="color:#fff">Lead Auditor perspective:</b> your controls get examined the way an external registrar will audit them.</li><li><b style="color:#fff">Engineering-first:</b> controls built around GitHub CI/CD, Okta and AWS, not manual screenshots.</li></ul></div>
+    <div class="c"><h3>What I deliver</h3><p>Hands-on execution across the audit preparation lifecycle:</p><ul><li><b style="color:#fff">ISO 27001 & 27701:</b> scope, 93 Annex A control mappings and the Statement of Applicability.</li><li><b style="color:#fff">SOC 2 Type 2:</b> observation window testing, criteria alignment and auditor query defense.</li></ul></div>
+    <div class="c"><h3>The difference I bring</h3><p>Paper compliance versus lasting resilience:</p><ul><li><b style="color:#fff">No audit scramble:</b> continuous evidence collection makes surveillance audits routine.</li><li><b style="color:#fff">Commercial velocity:</b> clear customer security questionnaires and SOC 2 requirements to unlock enterprise deals.</li></ul></div>
+  </div>
+  <div class="c" style="max-width:760px;margin:40px auto 0;padding:32px">
+    <div style="text-align:center;margin-bottom:22px"><small class="pe" style="font-weight:600">Confidential scoping</small><h2 style="font-size:24px;margin-top:4px">Start a consultation query</h2><p class="mu" style="margin-top:4px">Share your target standards, timeline and audit requirements.</p></div>
+    <form id="cf" onsubmit="sendQ(event)">
+      <div class="fr"><div><label>Full name *</label><input required placeholder="e.g. Anand Narayanan"></div><div><label>Work email *</label><input type="email" required placeholder="anand@company.com"></div></div>
+      <div class="fr"><div><label>Organization / domain</label><input placeholder="e.g. FinTech SaaS / Healthcare"></div><div><label>Framework needed *</label><select><option>ISO/IEC 27001:2022 implementation & Stage 1/2 readiness</option><option>SOC 2 Type 2 gap assessment & evidence package</option><option>ISO 42001 (AIMS) AI governance & model risk</option><option>Third-party risk management (TPRM) program</option><option>General cybersecurity GRC advisory</option></select></div></div>
+      <div style="margin-bottom:14px"><label>Scope & audit timelines</label><textarea rows="4" placeholder="Upcoming audit deadline, AWS/Azure environment details, or custom goals..."></textarea></div>
+      <label style="display:flex;gap:10px;align-items:flex-start;padding:14px;border-radius:12px;background:rgba(76,29,149,.16);border:1px solid rgba(139,92,246,.2);font-size:11.5px;margin-bottom:18px"><input id="pc" type="checkbox" required style="width:16px;margin-top:3px"><span>I consent to my details being processed only to evaluate this request, per the <button type="button" class="pe" style="text-decoration:underline" onclick="openM('privacy')">Privacy Policy (DPDPA 2023 / GDPR)</button>. No data is shared with third parties.</span></label>
+      <button class="btn b1" style="width:100%;justify-content:center;padding:13px">Send scoping request</button>
+    </form>
+  </div>
+</div>
+
+<footer><div class="w">
+  <div><b style="color:#fff">Aravind Annamalai</b> · Cybersecurity GRC & Compliance Specialist<br>Chennai, Tamil Nadu, India · ISO/IEC 27001 Lead Auditor</div>
+  <div style="display:flex;gap:20px;flex-wrap:wrap"><button onclick="openM('resume')">Resume</button><button onclick="go('consulting')">Consulting</button><button onclick="openM('privacy')" style="text-decoration:underline">Privacy policy</button><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></div>
+</div></footer>
+
+<div id="privacy" class="m hidden"><div class="c">
+  <div style="display:flex;justify-content:space-between;align-items:center"><h3 style="font-size:19px">Privacy policy & data notice</h3><button class="btn b2" onclick="closeM()">Close</button></div>
+  <p class="pl mono" style="margin-top:8px;font-size:11px">Last updated 2026 · Aligned with India's DPDPA 2023 and GDPR</p>
+  <h4>1. Data controller</h4><p>This portfolio and advisory contact portal is operated by Aravind Annamalai, Chennai, India.</p>
+  <h4>2. Data collected</h4><ul><li>Identity: full name, title, organization.</li><li>Contact: business email address.</li><li>Engagement context: framework interests and scoping remarks you provide.</li></ul>
+  <h4>3. Purpose and lawful basis</h4><p>Processed under legitimate interest / pre-contractual discussion, only to evaluate your request, respond, or schedule scoping calls. Never sold, rented or traded.</p>
+  <h4>4. Retention and safeguards</h4><p>Records are kept for the engagement discussion, or up to 180 days if none proceeds. Data is protected with HTTPS/TLS and restricted access.</p>
+  <h4>5. Your rights</h4><p>You may access, correct, withdraw consent for, or erase your data. Email <span class="mono" style="color:#fff">aravind@example.com</span>.</p>
+</div></div>
+
+<div id="resume" class="m hidden"><div class="c">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px"><div><h3 style="font-size:21px">Executive resume</h3><p class="pl mono" style="font-size:11px">Aravind Annamalai · Cybersecurity GRC Specialist</p></div><div style="display:flex;gap:8px"><button class="btn b2" onclick="window.print()">Print / PDF</button><button class="btn b2" onclick="closeM()">Close</button></div></div>
+  <h4>Summary</h4><p>Cybersecurity & GRC specialist with 4 years of experience across GRC consulting, audit readiness and client advisory. Has led ISO 27001:2022, ISO 27701, ISO 42001 and SOC 2 Type 2 programs across SaaS, manufacturing and AI platforms, with hands-on IT/IS risk assessment and TPRM experience.</p>
+  <h4>Certifications</h4><ul><li><b>ISO/IEC 27001:2022 Lead Auditor</b> – CQI / IRCA accredited</li><li><b>Certified in Cybersecurity (CC)</b> – ISC2</li><li><b>Google Cybersecurity Certificate</b> – Google</li></ul>
+  <h4>Experience</h4>
+  <p style="display:flex;justify-content:space-between"><b>WhizzC – GRC Specialist / Senior Compliance Analyst</b><span>1.5 years</span></p>
+  <ul><li>Led ISO 27001:2022 and SOC 2 Type 2 audit readiness across multiple enterprise clients.</li><li>Formulated 20+ policies and built Statement of Applicability (SoA) matrices.</li><li>Delivered IT & IS risk assessments and vendor risk (TPRM) procedures.</li></ul>
+  <p style="display:flex;justify-content:space-between;margin-top:12px"><b>Vault Infosec – Senior Sales Associate / Cybersecurity Advisory</b><span>2.5 years</span></p>
+  <ul><li>Scoped VAPT, network security and compliance proposals for corporate clients.</li><li>Facilitated discovery meetings between engineering teams and enterprise buyers.</li></ul>
+  <h4>Core standards</h4><p>ISO/IEC 27001:2022, ISO/IEC 27701 (Privacy), ISO/IEC 42001 (AI Management), SOC 2 Type 2, TPRM, IT/IS Risk Assessment.</p>
+</div></div>
+
+<script>
+var cur='main';
+function go(p,id){
+  cur=p;
+  document.getElementById('p-main').classList.toggle('hidden',p!=='main');
+  document.getElementById('p-consulting').classList.toggle('hidden',p!=='consulting');
+  document.getElementById('n-main').classList.toggle('on',p==='main');
+  document.getElementById('n-consulting').classList.toggle('on',p==='consulting');
+  if(id){setTimeout(function(){var e=document.getElementById(id);if(e)e.scrollIntoView({behavior:'smooth'})},30)}
+  else window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('.f button').forEach(function(b){b.onclick=function(){
+  document.querySelectorAll('.f button').forEach(function(x){x.classList.toggle('on',x===b)});
+  document.querySelectorAll('#sk .c').forEach(function(c){c.classList.toggle('hidden',b.dataset.t!=='all'&&c.dataset.t!==b.dataset.t)});
+}});
+function openM(id){closeM();document.getElementById(id).classList.remove('hidden')}
+function closeM(){document.querySelectorAll('.m').forEach(function(m){m.classList.add('hidden')})}
+document.querySelectorAll('.m').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m)closeM()})});
+addEventListener('keydown',function(e){if(e.key==='Escape')closeM()});
+document.addEventListener('mousemove',function(e){var c=e.target.closest&&e.target.closest('.c');if(c){var r=c.getBoundingClientRect();c.style.setProperty('--x',(e.clientX-r.left)+'px');c.style.setProperty('--y',(e.clientY-r.top)+'px')}});
+function sendQ(e){e.preventDefault();alert('Thank you. Your advisory inquiry has been recorded in line with the privacy policy. Aravind will connect shortly.');document.getElementById('cf').reset()}
+</script>
+</body>
+</html>
